@@ -1,0 +1,41 @@
+People (4x) - Anthony, Ben, Alana, Susan
+Front-end Files:
+Name -> big-brain-trivia
+(Be sure to install react-bootstrap bootstrap, react-router-dom, react-easy-state, react-d3-components)
+- App.js {First Priority} --> Anthony, FRIDAY
+- /src/components ~ Header --> Anthony, WEDNESDAY
+- /src/components ~ Dashboard Menu {First Priority} --> Anthony, FRIDAY
+- /src/components ~ Header --> Anthony, WEDNESDAY
+- /src/components ~ Home --> Anthony, TUESDAY
+- /src/components ~ Profile --> Alana, WEDNESDAY
+- /src/components ~ Leaderboard --> Alana, WEDNESDAY
+- /src/components ~ Log-in --> Ben, WEDNESDAY
+- /src/components ~ New User --> Ben, WEDNESDAY
+- /src/components ~ Rules --> Susan, WEDNESDAY
+- /src/components ~ BeginGame --> Alana, WEDNESDAY
+- /src/pages ~ Welcome_Page --> Ben, WEDNESDAY
+- /src/pages ~ DashboardPage (Home/Profile/Leaderboard) --> Anthony, FRIDAY
+- /src/pages ~ Game_Page --> Susan, TUESDAY
+- /src/pages ~ Congratulations_Page --> Susan, WEDNESDAY
+- /src/stores ~ store (question store, categories, currentPlayer) --> Ben, WEDNESDAY
+Coordinate names through Ben's branch
+- /src/styles
+- /public
+
+- /public (sound, img, title/description)
+
+People (2x) - Patrick, Jared, TUESDAY
+API Files:
+- Controller
+- Service Layer
+- Service Layer TEST
+- DTO ~ Player
+- DTO ~ Game
+- DAO ~ Player
+- DAO ~ Game
+
+COMPLETE
+DB Files:
+- ERD
+- triviaDB
+- triviaDBtest

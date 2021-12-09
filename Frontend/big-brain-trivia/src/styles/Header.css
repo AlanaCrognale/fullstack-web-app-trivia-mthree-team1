@@ -1,0 +1,61 @@
+header h1 {
+    position: relative;
+    font-size: 100%;
+}
+
+.header h1 span{
+    position: relative;
+    display: inline-block;
+    animation: animate 2s ease-in-out infinite;
+    animation-delay: calc(0.02s * var(--i));
+    font-family: "Drawn2";
+
+}
+
+@font-face {
+    font-family: Drawn1;
+    src: url("../styles/Lettersketch-ow1wV.ttf") format("truetype");
+    font-smooth: never;
+}
+
+@font-face {
+  font-family: Drawn2;
+  src: url("../styles/Abrushow-ALwDD.ttf") format("truetype");
+  font-smooth: never;
+ }
+
+@keyFrames animate {
+    0% {
+        transform: translateY(0px);
+    }
+    10% {
+        transform: translateY(-30%);
+    }
+    20%,100% {
+        transform: translateY(0px);
+    }
+}
+
+.header {
+    height: 12vh;
+    background-color: #ce67d1;
+    display: flex;
+    flex-direction: row;
+    font-family: "Drawn2";
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.header img {
+    height: 90%;
+}
+
+.right-header-logo {
+    margin-left: 20%
+}
+
+.left-header-logo {
+    margin-right: 20%
+}

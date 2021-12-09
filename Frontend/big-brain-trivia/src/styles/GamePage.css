@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+body {
+  font-family: "Nunito" !important;
+  background-image: url("../brain_background.jpg");
+}
+
+.Game-logo {
+    height: 10vmin;
+    pointer-events: none;
+}
+
+.Full-heart {
+    height: 5vmin;
+    pointer-events: none;
+    animation: heartbeat infinite linear 2s;
+}
+
+@keyframes heartbeat
+{
+  0%
+  {
+    transform: scale( .75 );
+  }
+  50%
+  {
+    transform: scale( 1 );
+  }
+  100%
+  {
+    transform: scale( .75 );
+  }
+}
+
+.Empty-heart {
+    height: 4vmin;
+    pointer-events: none;
+}
+
+.game-header {
+    background-color: rgba(0,0,0,0.85);
+    border-radius: 30px;
+}
+
+.category-title {
+    font-size : 10vh;
+    color: white;
+    font-family: Drawn2;
+    padding-top: 1.5em;
+}
+
+.score {
+    font-family : Drawn2;
+    font-size : 5vh;
+    color: white;
+    padding-bottom: 15px;
+}
+
+.lives {
+    font-family : Drawn2;
+    font-size : 3vh;
+    color: white;
+    padding-bottom: 65px;
+}
+
+.game-container {
+    width: 90%;
+    height: -webkit-fit-content;
+    background-image: url("../images/question-background.jpg");
+    background-size: cover;
+    border-radius: 30px;
+    position: absolute;
+    top: 5vh;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.card-question {
+    height: 11vh;
+    position: relative;
+    border-radius: 15px;
+}
+
+.card-question div {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+
+.question-card-animals {
+    text-align : center;
+    height : 15vh;
+    background-image: url("../images/animals.jpg");
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-weight: bold;
+    font-size: 2vh;
+}
+
+.question-card-animals .card-question {
+    background-color: rgba(0, 128, 0, 0.603);
+}
+
+.question-card-general-knowledge {
+    text-align : center;
+    height : 15vh;
+    border-radius: 15px;
+    background-image: url("../images/general-knowledge.png");
+    background-size: contain;
+    background-position: center;
+    background-color: rgb(248, 248, 141);
+    color: black;
+    font-weight: bold;
+    font-size: 2vh;
+}
+
+.question-card-general-knowledge .card-question {
+    background-color: rgba(248, 248, 141, 0.616);
+}
+
+.question-card-sports {
+    text-align : center;
+    height : 15vh;
+    border-radius: 15px;
+    background-image: url("../images/sports.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-weight: bold;
+    font-size: 2vh;
+}
+
+.question-card-sports .card-question {
+    background-color: rgba(0, 0, 255, 0.61);
+}
+
+.question-card-video-games {
+    text-align : center;
+    height : 15vh;
+    background-image: url("../images/video-games.jpg");
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-weight: bold;
+    font-size: 2vh;
+}
+
+.question-card-video-games .card-question {
+    background-color: rgba(255, 0, 0, 0.596);
+}
+
+.answer{
+    width: 70%;
+    height: 10vh;
+    font-size: 2vh;
+}
+
+.spinning-card {
+    pointer-events: none;
+}
+
+
+    .spinning-card {
+      animation: card-spin 0.5s linear;
+      animation-iteration-count: 1;
+    }
+
+
+@keyframes card-spin {
+    0% {
+        transform: rotateX(0deg);
+        }
+    100% {
+        transform: rotateX(360deg);
+    }
+}
+
+@font-face {
+    font-family: Drawn2;
+    src: url("../styles/Abrushow-ALwDD.ttf") format("truetype");
+    font-smooth: never;
+   }
+
+.round-info{
+    font-size : 3vh;
+    background-color: rgba(255, 255, 255, 0.616)
+}
+
+.correct-answer-reveal{
+    background-color: rgba(0,0,0,0.95) ;
+    border: solid 2px rgba(206,103,209,0.85) ;
+    color: white;
+    border-radius: 15px;
+    font-family: "Drawn2";
+    font-size: 1.5em;
+    padding: 50px;
+    display: block;
+}
+
+.to-result{
+    font-size: 5vh;
+    background-color: rgba(206,103,209,1);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+
+.to-result:hover{
+    background-color: white;
+    color: black;
+    text-decoration: none;
+}
+
+.exit-modal{
+    font-family: "Drawn2";
+    font-size: 1.5em;
+}
+
+.modal-yes{
+    font-size: 2em;
+    color: green;
+}
+
+.modal-no{
+    font-size: 2em;
+    color: red;
+}
+
+.modal-yes:hover{
+    color:green;
+}
+
+.modal-no:hover{
+    color:red;
+}

@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+.App {
+  text-align: center;
+  background-image: url("./brain_background.jpg");
+  position: relative;
+  height: 100%;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.Game-logo {
+  height: 10vmin;
+  pointer-events: none;
+}
+
+.Full-heart {
+  height: 5vmin;
+  pointer-events: none;
+}
+
+.Empty-heart {
+  height: 4vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 3s linear;
+  }
+}
+
+.App-page {
+  width: 100%;
+  min-height: 110vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  0% {
+    transform: rotate(-45deg);
+  }
+  50% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(-45deg);
+  }
+}
+
+.App-menu ul {
+  width: 100%;
+  float: left;
+  background-color: black;
+  font-size: 1.5em;
+  font-family: "Drawn2";
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+}
+
+.App-menu ul li {
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.App-menu ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+.App-menu ul li a:hover {
+  color: #ce67d1;
+}
+
+.log-out {
+  margin-left: auto;
+}
+
+.card-home {
+    background-color: rgba(0,0,0,0.93) !important;
+    border: solid 2px rgba(206,103,209,0.85) !important;
+    color: white;
+    font-family: "Drawn2";
+    font-size: 1.1em;
+    display: block;
+    width: 100%;
+    min-height: 800px;
+}
+
+.card-profile {
+    padding-top: 3em;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.card-leaderboard {
+  font-family: "Nunito" !important;
+  font-size: 1.8em;
+  min-height: 850px;
+}
+
+.card-title {
+    font-size: 2.5em;
+}
+
+.card-home ul{
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  max-width: 40em;
+  list-style: none;
+  padding-bottom: 20px;
+}
+
+.card-home ul li {
+  color: #fff;
+  background-color: #ce67d1;
+  padding: 15px;
+  margin-bottom: 7px;
+  border-radius: 20px;
+  font-size: 1.2em;
+  font-family: "Nunito";
+}
+
+.card-home ul li:nth-child(even){
+  background-color: #434A54;
+}
+
+.form-group {
+  font-family: "Nunito";
+}
+
+.text-danger {
+  padding-top: 10px;
+}
+
+.modal-dialog {
+  font-family: "Drawn2";
+}
+
+table {
+  width: 60%;
+  color: white;
+  border-radius: 6px;
+  border: solid white 1px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+td, th {
+  border-left:solid white 1px;
+  border-top:solid white 1px;
+  padding: 5px;
+}
+
+th {
+  background-color: #ce67d1;
+  border-top: none;
+}
+
+td:first-child, th:first-child {
+  border-left: none;
+}
+
+.profile-button {
+  background-color: #ce67d1 !important;
+  height: 3.5em;
+  width: 10em;
+  font-size: 1.3em !important;
+  border-color: white;
+}
+
+#dropdown-item-button {
+  background-color: #ce67d1 !important;
+  border-color: white;
+  font-size: 0.7em !important;
+  height: 2.5em;
+  width: 8em;
+}

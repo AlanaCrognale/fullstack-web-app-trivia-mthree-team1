@@ -1,0 +1,75 @@
+.home-section {
+    text-align : center;
+    background-color : rgba(255, 255, 255, 0.822);
+    margin-top: 2vh;
+    margin-left: 2vh;
+    margin-right: 2vh;
+    border-radius: 10px;
+    height: 75vh;
+}
+
+.category {
+    font-size : calc(10px + 3vh);
+    height : 15vh;
+    font-weight : bold;
+    color: white;
+}
+
+.begin {
+    font-size : calc(10px + 3vh);
+    font-weight : bold;
+    line-height: 12vh;
+    background-color: #ce67d1;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-radius: 15px;
+    border: 2px #ce67d1 solid;
+}
+
+.begin:hover {
+    background-color: black;
+}
+
+.rules-logo {
+    height : 45%;
+}
+
+.btn-animals {
+    background-color : green;
+}
+
+.btn-general-knowledge {
+    background-color :#FFBF00;
+}
+
+.btn-sports {
+    background-color : blue;
+}
+
+.btn-video-games {
+    background-color : red;
+}
+
+.btn-animals:hover, .btn-animals-selected{
+    background-image: url("../images/animals.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.btn-general-knowledge:hover, .btn-general-knowledge-selected{
+    background-color: rgb(248, 248, 141);
+    background-image: url("../images/general-knowledge.png");
+    background-size: contain;
+    background-position: center;
+}
+
+.btn-video-games:hover, .btn-video-games-selected{
+    background-image: url("../images/video-games.jpg");
+    background-size: cover;
+}
+
+.btn-sports:hover, .btn-sports-selected{
+    background-image: url("../images/sports.jpg");
+    background-size : cover;
+}
+

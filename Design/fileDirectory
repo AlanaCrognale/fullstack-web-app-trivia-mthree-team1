@@ -1,0 +1,72 @@
+Game Rules:
+- 15 ? / game
+- 5 ea difficulty (easy, medium, hard)
+- 1 pt - easy, 2pt - medium, 3pt - hard
+- Set conditions per game: Category, Type - MC
+- 3 Lives
+- Four Main Categories: General Knowledge (id=9), Entertainment: Video Games (id=15), Sports (id=21), Animals (id=27)
+- Set Token *per login* --> Store player
+- Only one game at a time
+
+Front-end/React
+Key Personnel: 
+- All pages have Home button!!
+- Welcome/Home Page (Nav buttons)
+-   Login/New User --> Replace with Begin Game, Profile Page
+-   Game Rules, Introduction
+- Player Profile page
+-   Account: Name, Reset Pwd, Delete Acct.
+-   Stats: Per Category High Score --> See Leaderboard (Separate page), Per Category Accuracy, Total Win/Lose ratio (Stretch Goal: Streak, over time improve)
+-   Return to Welcome
+- Game page
+-   Select Category
+-   Replace with Questions (colors/animation/fancy stuff) {fetch request from Trivia API}
+-   Fetch ?s (NOTE: If locking difficulty, can only pull 5 at a time)
+-   Check 3 ?s wrong --> End game, Lose
+-   Check end of ?s --> End game, Win
+
+
+
+API/Springboot
+Key Personnel:
+- !! Endpoints (Controller) - {http://localhost:8080/api/bigBrainGame}
+-   POST{/game}- Create new game
+-     RequestBody - { playerName, category}
+-     ResponseBody - { gameId }
+-   POST{/player} - Create new player
+-     RequestBody - {playerName, password}
+-     ResponseBody - NONE
+-   PUT{/player/(name)} - Update player pwd/token
+-     RequestBody - {password, token} !!! http patch to handle which update
+-     ResponseBody - NONE
+-   PUT{/game/(id)} - Update score, questionsCorrect (Called once at end of game)
+-     RequestBody - {score, questionsCorrect, questionsIncorrect} !!! http patch to handle which update
+-     ResponseBody - NONE 
+-   GET{/player/(name)} - logs player in
+-       RequestBody - {password} !!! Validate pwd !!!
+-       ResponseBody - {token}
+-   GET{/stats/(playerName)}
+-       RequestBody - NONE
+-       ResponseBody - [{category: , highScore: , winLoseRatio: , correctAnswerPercent: }, {category: , highScore: , winLoseRatio: , correctAnswerPercent: }]
+-   GET{/leaderboard/(type)/(category)} (category: include 'total' for winlose)
+-       RequestBody - NONE
+-       ResponseBody - [{playerName: , value: }, {playerName: , value: }, {playerName: , value: }, ...]
+-   DELETE{/player/(name)} - delete corresponding games, delete player
+- Service Layer
+- DTO
+- DAO/Models
+
+
+
+Back-end/DB
+Key Personnel:
+player-ERD
+player-DB
+
+
+
+Future Directions:
+- Timer + increase pts for speed
+- Add Categories
+-   Dropdown All Categories
+- Guest player option
